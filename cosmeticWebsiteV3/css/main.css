@@ -1,0 +1,200 @@
+@charset "UTF-8";
+/*for the load screen*/
+body{
+   width:100%;
+   height:100%;
+}
+
+.blackScreen{
+   z-index:1;
+   background-color:#444;
+   width:100%;
+   height:1200px;
+   margin-top:-32px;
+   position:absolute;
+   display:none;
+
+   /*transparent*/
+   ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";       /* IE 8 */
+   filter: alpha(opacity=95);  /* IE 5-7 */
+   -moz-opacity: 0.95;          /* Netscape */
+   -khtml-opacity: 0.95;        /* Safari 1.x */
+   opacity: 0.95;               /* Good browsers */
+}
+
+.loader{
+   position:absolute;
+   top:40%;
+   left:50%;
+}
+
+/*for the main Screen*/
+.mainHeader{
+	background-color:#339966;
+	color:#FFF;
+}
+
+.mainTextBoxContainer{
+	padding:20px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.contactForm input[type=text]{
+	width:100%;
+	background-color: #129793;
+    color: #FFF;
+
+	padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+	font-size:28px;
+}
+
+.contactForm input[type=text]:focus {
+    border: 3px solid #200;
+}
+
+.contactForm textArea{ /*レビュー入力欄*/
+	width:90%;
+	height: 350px;
+	background-color: gray;
+    color: #FFF;
+
+	padding: 12px 20px;
+    margin: 0px 0 0px 60px;;
+    box-sizing: border-box;
+
+	font-size:28px;
+	border-radius: 30px; /*角の丸み*/
+}
+
+.contactForm textArea:focus {
+    border: 3px solid #200;
+}
+.contactForm input[type=button]{ /*送信ボタン*/
+		background-color: #339966;
+    border: none;
+    color: #FFF;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+		cursor:pointer;
+
+		float:right;
+		margin-right:1%;
+
+    font-size: 28px;
+}
+
+.contactForm input[type=button]:hover{
+	background-color: #222;
+    color: #FFF;
+}
+
+.resultBoxContainer{
+	padding:20px;
+	margin: 0 0 0 0;
+	/* margin-left:auto;
+	margin-right:auto; */
+}
+
+.tagAnswer{
+	margin:20px;
+	padding:2px;
+}
+.scoreAnswer{
+	text-align: left;
+}
+table.type01 {
+	font-size: 20px;
+	margin:20px 20px 20px 0;
+	padding:2px;
+	border-collapse: collapse;
+	line-height: 0.5;
+	margin-left: auto;
+	margin-right: auto;
+}
+table.type01 th {
+	width: 320px;
+	padding: 10px;
+	font-weight: bold;
+	vertical-align: top;
+	text-align: right;
+}
+table.type01 td {
+	width: 220px;
+	padding: 10px;
+	vertical-align: top;
+	text-align: left;
+	color: #FFCC33;
+}
+div.box{ /*タグ*/
+	font-size: 25px;
+	border-style: solid ;
+	border-width: 1px; /*タグのフチの幅*/
+	width: 60%;
+	border-radius: 10px; /*角の丸み*/
+	background-color: #EEEEEE;
+	text-align: center;
+	border: 1px solid white;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+h1{
+	font-size: 80px;
+	text-align: center;
+	font-weight: 100; /*文字幅*/
+	letter-spacing: -4px; /*文字距離*/
+
+}
+h2{
+	font-size: 50px;
+	text-align: center;
+}
+.balloon2-left {
+ 	position: relative;
+	display: inline-block;
+ 	margin: 0 10% 0 0;
+	padding: 1px;
+	min-width: 120px;
+ 	max-width: 100%;
+ 	color: #555;
+	font-size: 16px;
+	background: #FFF;
+ 	border: solid 3px #555;
+ 	box-sizing: border-box;
+	border-radius: 30px; /*角の丸み*/
+}
+
+.balloon2-left:before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -24px;
+ 	margin-top: -13px;
+	border: 12px solid transparent;
+	border-right: 12px solid #FFF;
+ 	z-index: 2;
+}
+
+.balloon2-left:after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -30px;
+ 	margin-top: -14px;
+	border: 14px solid transparent;
+	border-right: 14px solid #555;
+ 	z-index: 1;
+}
+
+.balloon2-left p {
+	margin: 0;
+	padding: 0;
+}
