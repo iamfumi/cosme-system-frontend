@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+
+<HEAD>
+
+<!--meta keywords-->
+<meta name="keywords" content="化粧品,レビューサイト,ML">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/> <!--force IE to not run compatibility mode -->
+<meta name="description" content=" 化粧品レビューサイト>
+
+<!--language requirements for the japanese page -->
+<meta http-equiv="Content-Language" content="jp">
+<meta charset="UTF-8">
+
+<TITLE>化粧品レビューサイト </TITLE>
+
+<!--link all the necessary public libraries -->
+<!-- load Jquery -->
+<!--<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script> -->
+<script src="_js/jquery.js"></script>
+
+<!-- load bootstrap-->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+<script src="_js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="_css/bootstrap.css"/>
+
+<!-- own source scripts-->
+<script src="_js/interactionScript.js"></script>
+<link rel="stylesheet" type="text/css" href="_css/font.css"/>
+<link rel="stylesheet" type="text/css" href="_css/main.css" />
+
+</HEAD>
+
+<BODY>
+
+<!--トップバナー-->
+<div class="jumbotron text-center mainHeader">
+  <h1>Cosmetic Review Scoring System<br>フローラル</h1>
+</div>
+
+<div class="blackScreen">
+   <div class="loader">
+   	<img src="_img/gif-loader.gif" height="100" width="100">
+   </div>
+</div>
+
+<div class="container-fluid mainInput">
+  <div class="row">
+    <!-- user input page -->
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 mainTextBoxContainer">
+		<div class="content">
+			<form class="contactForm" id="ContactUsForm">
+				<textarea placeholder="レビューを書いてみてください" name="review" id="reviewInputText" ></textArea> <br/>
+					<!--<input type="button" name="submit" id="sendReview" value="送信"/>-->
+			</form>
+
+
+	<img src="_img/girl.png" width="100%" height="auto">
+	<div class="tagbox">
+		<div class="box"><span id="tag0" class="tagAnswer">{{tag0}}</span></div>
+		<div class="box"><span id="tag1" class="tagAnswer">{{tag0}}</span></div>
+		<div class="box"><span id="tag2" class="tagAnswer">{{tag0}}</span></div>
+		<div class="box"><span id="tag3" class="tagAnswer">{{tag0}}</span></div>
+		<div class="box"><span id="tag4" class="tagAnswer">{{tag0}}</span></div>
+		<div class="box"><span id="tag6" class="tagAnswer">{{tag0}}</span></div>
+		<div class="box"><span id="tag7" class="tagAnswer">{{tag0}}</span></div>
+		<div class="box"><span id="tag8" class="tagAnswer">{{tag0}}</span></div>
+		<div class="box"><span id="tag9" class="tagAnswer">{{tag0}}</span></div>
+	</div>
+		</div>
+  </div>
+	<!-- user review page -->
+
+
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 resultBoxContainer">
+		<div class="content">
+			<!-- <h1>Scoring Result</h1> -->
+			<div class="balloon2-left">
+				<p>
+					<table class="type01" align="center" bgcolor="white">
+						<tr>
+						<th scope="row">フローラル</th>
+						<td><span id="score0" class="scoreAnswer">{{score0}}</span></td>
+						</tr>
+						<tr>
+						<th scope="row">うるおい/浸透</th>
+						<td><span id="score1" class="scoreAnswer">{{score0}}</span></td>
+						</tr>
+						<tr>
+						<th scope="row">美白/UV</th>
+						<td><span id="score2" class="scoreAnswer">{{score0}}</span></td>
+						</tr>
+						<tr>
+						<th scope="row">毛穴・角質ケア/高クレンジング</th>
+						<td><span id="score3" class="scoreAnswer">{{score0}}</span></td>
+						</tr>
+						<tr>
+						<th scope="row">爽快感/顔のテカリ防止</th>
+						<td><span id="score4" class="scoreAnswer">{{score0}}</span></td>
+						</tr>
+						<tr>
+						<th scope="row">サラサラ⇆トロトロ</th>
+						<td><span id="score5" class="scoreAnswer">{{score0}}</span></td>
+						</tr>
+						<tr>
+						<th scope="row">低刺激</th>
+						<td><span id="score6" class="scoreAnswer">{{score0}}</span></td>
+						</tr>
+						<tr>
+						<th scope="row">肌荒れ対策</th>
+						<td><span id="score7" class="scoreAnswer">{{score0}}</span></td>
+						</tr>
+						<tr>
+						<th scope="row">エイジングケア</th>
+						<td><span id="score8" class="scoreAnswer">{{score0}}</span></td>
+						</tr>
+						<tr>
+						<th scope="row">コストパフォーマンス</th>
+						<td><span id="score9" class="scoreAnswer">{{score0}}</span></td>
+						</tr>
+					</table>
+				</p>
+		</div>
+	</div>
+    </div>
+	</div> <!-- row -->
+</div>
+
+</BODY>
+
+</HTML>
